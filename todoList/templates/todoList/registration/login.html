@@ -1,0 +1,28 @@
+{% extends 'todoList/base.html' %} {% block content %}
+
+<div class="register-wrapper">
+  <div class="hero-section">
+    <div class="hero-text">
+      <p>Welcome to GamTech TodoList App.</p>
+    </div>
+  </div>
+  <div class="register-section">
+    <div>
+      <div class="form-body">
+        <div class="form-body">
+          <h1>Login</h1>
+          <form action="" method="POST">
+            {% csrf_token %} {{ form.as_p }}
+            <input class="button" type="submit" value="login" />
+          </form>
+          <p style="margin-top: 20px">
+            You don't have an Account? sign up
+            <a href="{% url 'register' %}">here</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

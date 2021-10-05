@@ -1,0 +1,39 @@
+{% extends 'todoList/base.html' %} {% block content %}
+
+<div class="register-wrapper">
+  <div class="register-section">
+    <div>
+      <div class="form-body">
+        <h1>Register</h1>
+        <form action="" method="POST">
+          {% csrf_token %}
+          <label>{{ form.username.label }}</label>
+          {{ form.username }}
+
+          <label>{{ form.password1.label }}</label>
+          {{ form.password1 }}
+
+          <label>{{ form.password2.label }}</label>
+          {{ form.password2 }}
+          <input
+            class="button"
+            type="submit"
+            value="Register"
+            style="margin-top: 10px"
+          />
+        </form>
+
+        <p style="margin-top: 20px">
+          Already have an Account? sign in <a href="{% url 'login' %}">here</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="hero-section">
+    <div class="hero-text">
+      <p>Welcome to GamTech TodoList App.</p>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

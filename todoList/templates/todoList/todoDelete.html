@@ -1,0 +1,15 @@
+{% extends 'todoList/base.html' %} {% block content %}
+
+<div class="header">
+  <a href="{% url 'todo-list' %}" style="font-size: 40px">&#8617;</a>
+</div>
+
+<div class="form-body">
+  <form action="" method="POST">
+    {% csrf_token %}
+    <p>Are you sure you want to delete {{ todo.title }}</p>
+    <input class="button" type="submit" value="Delete" />
+  </form>
+</div>
+
+{% endblock content %}

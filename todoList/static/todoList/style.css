@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+.container {
+  background-color: #fafafa;
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+  margin: auto;
+  -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+  box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+}
+
+a,
+p {
+  color: black;
+}
+.count {
+  margin: 0;
+}
+.header {
+  background-color: blue;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  color: whitesmoke;
+}
+.header a {
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  border-color: white;
+}
+.todos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  border-top: 1px solid rgb(226, 226, 225);
+}
+.todo-title {
+  display: flex;
+}
+.todo-title a {
+  text-decoration: none;
+  color: #4b5156;
+  margin-left: 20px;
+}
+.todo-complete-icon {
+  height: 20px;
+  width: 20px;
+  background-color: rgb(6, 31, 248);
+  border-radius: 50%;
+}
+.todo-incomplete-icon {
+  height: 20px;
+  width: 20px;
+  background-color: rgb(218, 218, 218);
+  border-radius: 50%;
+}
+.delete-icon {
+  text-decoration: none;
+  font-weight: 900;
+  color: #cf4949;
+  font-size: 22px;
+  line-height: 0;
+}
+.search-add {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.create-todo {
+  color: blue;
+  text-decoration: none;
+  font-size: 42px;
+  text-shadow: 1px 1px #81413b;
+  /* border-style: double; */
+}
+input[type="text"],
+input[type="password"],
+textarea {
+  border: 1px solid blue;
+  border-radius: 5px;
+  width: 90%;
+  padding: 10px;
+}
+label {
+  padding-top: 10px !important;
+  display: block;
+}
+.button {
+  border: 1px solid blue;
+  background-color: #fafafa;
+  border-radius: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px;
+  display: block;
+}
+.form-body {
+  padding: 20px;
+}
+.form-body-add-todo,
+.form-body-update-todo {
+  width: 40%;
+  margin: 0 auto;
+}
+.register-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.register-section {
+  width: 50%;
+}
+.hero-section {
+  width: 50%;
+  height: 100vh;
+  background-color: aqua;
+  /* justify-content: center;
+        align-items: center; */
+}
+.hero-text {
+  font-size: 50px;
+  text-align: center;
+  color: black;
+  font-family: "Lato", sans-serif;
+}

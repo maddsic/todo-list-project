@@ -1,0 +1,14 @@
+{% extends 'todoList/base.html' %} {% block content %}
+
+<div class="header">
+  <a href="{% url 'todo-list' %}" style="font-size: 40px">&#8617;</a>
+</div>
+
+<div class="form-body-update-todo">
+  <form action="" method="POST">
+    {% csrf_token %} {{ form.as_p }}
+    <input class="button" type="submit" value="Update" />
+  </form>
+</div>
+
+{% endblock content %}
